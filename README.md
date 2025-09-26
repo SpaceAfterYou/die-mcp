@@ -2,7 +2,7 @@
 
 # Detect It Easy [model context protocol]
 
-## Environment file example ✉️
+## Environment Example 📜
 
 ```ini
 DIE_PATH = C:/diec.exe
