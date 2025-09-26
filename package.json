@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "die-mcp",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "MCP server for Detect It Easy (DIE) - analyze executable files and get detailed program information",
+  "author": {
+    "name": "sawich",
+    "url": "https://github.com/sawich"
+  },
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SpaceAfterYou/die-mcp"
+  },
+  "keywords": ["mcp", "detect-it-easy", "die", "executable-analysis", "reverse-engineering", "file-analysis"],
+  "main": "app/index.js",
+  "module": "./app/index.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "lint.fix": "eslint --fix .",
+    "inspect": "mcp-inspector bun dev.local",
+    "dev.local": "bun run --watch app/index.ts",
+    "dev": "smithery dev",
+    "build": "smithery build"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.2",
+    "zod": "3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.2",
+    "@smithery/sdk": "^1.6.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^5.4.1",
+    "@modelcontextprotocol/inspector": "^0.16.8",
+    "@smithery/cli": "^1.4.0",
+    "@types/bun": "^1.2.22",
+    "eslint": "^9.36.0",
+    "jiti": "^2.6.0"
+  }
+}
